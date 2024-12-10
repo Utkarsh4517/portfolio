@@ -5,62 +5,70 @@ import pic from '../assets/msr.jpeg';
 
 export function Hero() {
   return (
-    <section className="h-screen flex items-center justify-center relative overflow-hidden">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        className="text-center"
-      >
+    <section className="min-h-screen bg-[#0a0a0a] px-6 pt-8">
+      <nav className="flex justify-between items-center mb-20">
+        <span className="text-sm text-gray-400">hi@utkarsh4517.in</span>
+        <div className="flex gap-4 text-sm text-gray-400">
+          <a href="#" className="hover:text-white">LinkedIn</a>
+          <span>/</span>
+          <a href="#" className="hover:text-white">Twitter</a>
+          <span>/</span>
+          <a href="#" className="hover:text-white">Github</a>
+        </div>
+      </nav>
+
+      <div className="max-w-4xl mx-auto text-center">
         <motion.div
           initial={{ scale: 0 }}
           animate={{ scale: 1 }}
-          transition={{ delay: 0.2 }}
-          className="w-32 h-32 rounded-full overflow-hidden mx-auto mb-8"
+          className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-6"
         >
           <Image
             src={pic}
             alt="Profile"
-            width={128}
-            height={128}
+            width={96}
+            height={96}
             className="object-cover"
           />
         </motion.div>
-        
-        <motion.h1
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.4 }}
-          className="text-4xl md:text-6xl font-bold mb-4"
-        >
-          Mobile & Frontend Developer
-        </motion.h1>
-        
+
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.6 }}
-          className="text-gray-400 text-xl mb-8"
+          className="text-sm mb-4"
         >
-          Building digital experiences with Flutter & React Native
+          Hi, I'm Utkarsh 👋
         </motion.p>
-        
-        <motion.div
+
+        <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-          className="flex justify-center gap-4"
+          className="text-5xl font-light mb-20"
         >
-          {['Flutter', 'React Native', 'Frontend'].map((tech, index) => (
-            <span
-              key={tech}
-              className="px-4 py-2 bg-gray-800 rounded-full text-sm"
+          Building <span className="text-gray-500">high qaulity</span> web and mobile{' '}
+          <span className="text-gray-500">experiences.</span>
+        </motion.h1>
+
+        <div className="flex justify-center gap-8">
+          {['Flutter', 'React Native', 'NextJS', 'React', 'Web 3.0'].map((brand) => (
+            <motion.div
+              key={brand}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.5 }}
+              whileHover={{ opacity: 1 }}
+              className="w-24"
             >
-              {tech}
-            </span>
+              <Image
+                src={`/brands/${brand.toLowerCase()}.svg`}
+                alt={brand}
+                width={96}
+                height={32}
+                className="grayscale hover:grayscale-0"
+              />
+            </motion.div>
           ))}
-        </motion.div>
-      </motion.div>
+        </div>
+      </div>
     </section>
   );
 }
