@@ -49,24 +49,28 @@ export function Hero() {
           <span className="text-gray-500">experiences.</span>
         </motion.h1>
 
-        <div className="flex justify-center gap-8">
-          {['Flutter', 'React Native', 'NextJS', 'React', 'Web 3.0'].map((brand) => (
-            <motion.div
-              key={brand}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 0.5 }}
-              whileHover={{ opacity: 1 }}
-              className="w-24"
-            >
-              <Image
-                src={`/brands/${brand.toLowerCase()}.svg`}
-                alt={brand}
-                width={96}
-                height={32}
-                className="grayscale hover:grayscale-0"
-              />
-            </motion.div>
-          ))}
+        <div className="flex justify-center items-center gap-12">
+          {['Flutter', 'React Native', 'Swift UI', 'React', 'Web 3.0'].map((brand) => {
+            const filename = brand.toLowerCase().replace(/ /g, '-');
+            return (
+              <motion.div
+                key={brand}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 0.5 }}
+                whileHover={{ opacity: 1 }}
+                className="flex items-center gap-2"
+              >
+                <Image
+                  src={`/brands/${filename}.svg`}
+                  alt={brand}
+                  width={30}
+                  height={30}
+                  className="grayscale hover:grayscale-0"
+                />
+                <span className="text-gray-400 text-md text-start">{brand}</span>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>
