@@ -5,7 +5,7 @@ import pic from '../assets/msr.jpeg';
 
 export function Hero() {
   return (
-    <section className="min-h-screen bg-[#0a0a0a] px-6 pt-8">
+    <section className="bg-[#0a0a0a] px-6 pt-8">
       <nav className="flex justify-between items-center mb-20">
         <span className="text-sm text-gray-400">hi@utkarsh4517.in</span>
         <div className="flex gap-4 text-sm text-gray-400">

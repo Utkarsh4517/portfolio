@@ -28,30 +28,16 @@ const services = [
 export function Services() {
   return (
     <section className="py-20 px-6 bg-[#0a0a0a]">
-      <div className="max-w-4xl mx-auto">
+      <div className="w-1/3 mx-auto">
         <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           className="text-center text-xl mb-20"
         >
-          Collaborate with brands and agencies to create impactful results.
+          <div className="gap-2 border-1 border border-white p-2 rounded-2xl text-base">
+            hi, I am Utkarsh
+          </div>
         </motion.p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {services.map((service, index) => (
-            <motion.div
-              key={service.title}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-              className="p-6 bg-[#1a1a1a] rounded-lg hover:bg-[#242424] transition-colors"
-            >
-              <div className="mb-4">{service.icon}</div>
-              <h3 className="text-lg font-medium mb-2">{service.title}</h3>
-              <p className="text-sm text-gray-400">{service.description}</p>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </section>
   );
