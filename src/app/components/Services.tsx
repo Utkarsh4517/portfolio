@@ -1,6 +1,5 @@
-'use client';
-import { motion } from 'framer-motion';
-
+"use client";
+import { motion } from "framer-motion";
 
 export function Services() {
   return (
@@ -12,7 +11,7 @@ export function Services() {
           transition={{ duration: 0.5 }}
           className="group relative"
         >
-          <div 
+          <div
             className="gap-2 border border-gray-800/60 bg-gray-900/20 p-8 rounded-2xl 
                      text-base font-light text-gray-400/80 leading-relaxed tracking-wide
                      backdrop-blur-sm transition-all duration-300 ease-in-out
@@ -20,19 +19,16 @@ export function Services() {
                      group-hover:text-gray-300 group-hover:shadow-xl 
                      group-hover:shadow-accent/5"
           >
-            This isn&apos;t just another developer. This is Utkarsh. He&apos;s not going to bore you with a laundry list of acronyms. 
-            He <span className="text-accent font-medium">*builds*</span> things. Real things. Beautiful, functional things. 
-            Think of him as the conductor of a digital orchestra. He&apos;s fluent in the language of web apps, crafting elegant 
-            experiences for any screen. Mobile? That&apos;s his forte. He lives and breathes cross-platform development, churning 
-            out sleek, intuitive apps that feel native, no matter the device. He can whip up a backend, get your project 
-            deployed faster than you can say &quot;app store,&quot; and even automate the whole damn process with CI/CD magic. 
-            Based in India, but his code speaks a universal language: innovation. Utkarsh. He&apos;s not just a 10x developer. 
-            He&apos;s the developer you need when you want to build something 
-            <span className="text-accent font-medium"> *insanely great*</span>.
+            I am a generalist. I build things, I ship real <span className="text-accent font-medium">products and tools.</span> I
+            craft beautiful and functional <span className="text-accent font-medium">mobile apps</span>, I can write web apps, I
+            can deploy your mobile app to the stores, I can write CI/CD for your
+            mobile apps, I can even fix your product, be it design or code. I am
+            a 10x dev, You want me when you want build something <span className="text-accent font-medium">*insanely great*</span>
+
+    
           </div>
-          
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -40,13 +36,13 @@ export function Services() {
                      transform transition-all duration-300 ease-in-out
                      group-hover:text-gray-400/60 group-hover:-translate-y-1"
           >
-            — in the spirit of Steve Jobs&apos; legendary product introductions <br>
-            </br> This is how Jobs would have described me.
+            — maybe a bit exaggerated but okay{" "}
           </motion.div>
-          
-       
-          <div className="absolute inset-0 -z-10 bg-gradient-to-r from-accent/10 via-transparent to-accent/10 
-                        opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100" />
+
+          <div
+            className="absolute inset-0 -z-10 bg-gradient-to-r from-accent/10 via-transparent to-accent/10 
+                        opacity-0 blur-xl transition-opacity duration-500 group-hover:opacity-100"
+          />
         </motion.div>
       </div>
     </section>
