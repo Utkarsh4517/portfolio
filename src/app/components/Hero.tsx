@@ -45,7 +45,7 @@ export function Hero() {
           animate={{ opacity: 1 }}
           className="text-5xl font-light mb-20"
         >
-          Building <span className="text-gray-500">high qaulity</span> web and mobile{' '}
+          Building <span className="text-gray-500">high qaulity</span> mobile and web{' '}
           <span className="text-gray-500">experiences.</span>
         </motion.h1>
 

@@ -24,6 +24,9 @@ export default {
           },
         },
       },
+      fontFamily: {
+        junge: ['var(--font-junge)'],
+      },
     },
   },
   plugins: [
