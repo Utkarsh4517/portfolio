@@ -20,6 +20,14 @@ const blogPosts = [
     url: "https://dev.to/utkarsh4517/the-practical-hands-on-guide-to-flutter-isolates-4834",
     tags: ["Flutter", "Mobile Development", "Isolates"]
   },
+  {
+    title: "Automate flutter app creation and signing process with quickfire",
+    description: "Craft a feature-rich Flutter project with auth, Bloc architecture, and onboarding screens, effortlessly deployable on the Play Store without manual hassles!",
+    date: "December 5, 2023",
+    readTime: "7 min read",
+    url: "https://utkarshshrivastava.hashnode.dev/automate-flutter-app-creation-and-signing-process-with-quickfire",
+    tags: ["Flutter", "Mobile Development", "Quickfire"]
+  },
 ];
 
 export default function Blog() {
