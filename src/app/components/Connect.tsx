@@ -21,7 +21,7 @@ const links = [
     title: "Blog",
     description: "Read my thoughts on development and tech",
     icon: <BookOpenIcon className="w-6 h-6" />,
-    url: "/",
+    url: "/blog",
     className: "bg-purple-500/10 text-purple-500 hover:bg-purple-500/20"
   }
 ];
