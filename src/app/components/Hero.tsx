@@ -7,13 +7,13 @@ export function Hero() {
   return (
     <section className="bg-[#0a0a0a] px-6 pt-8">
       <nav className="flex justify-between items-center mb-20">
-        <span className="text-sm text-gray-400">hi@utkarsh4517.in</span>
+        <span className="text-sm text-gray-400">uttkarsh.dav@gmail.com</span>
         <div className="flex gap-4 text-sm text-gray-400">
-          <a href="#" className="hover:text-white">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/utkarsh-shrivastava-7339041a0/" className="hover:text-white">LinkedIn</a>
           <span>/</span>
-          <a href="#" className="hover:text-white">Twitter</a>
+          <a href="https://twitter.com/utkarsh4517" className="hover:text-white">Twitter</a>
           <span>/</span>
-          <a href="#" className="hover:text-white">Github</a>
+          <a href="https://github.com/Utkarsh4517" className="hover:text-white">Github</a>
         </div>
       </nav>
 
