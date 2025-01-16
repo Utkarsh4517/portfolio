@@ -15,7 +15,7 @@ export function GetInTouch() {
           <h2 className="text-3xl font-light mb-6">Get in Touch</h2>
           <p className="text-gray-400 mb-10 max-w-2xl mx-auto">
             Have a project in mind or just want to chat? Feel free to reach out. 
-            I'm always open to discussing new opportunities and ideas.
+            I&apos;m always open to discussing new opportunities and ideas.
           </p>
           
           <motion.a

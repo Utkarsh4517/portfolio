@@ -9,6 +9,9 @@ export function Hero() {
       <nav className="flex justify-between items-center mb-20">
         <span className="text-sm text-gray-400">uttkarsh.dav@gmail.com</span>
         <div className="flex gap-4 text-sm text-gray-400">
+        <a href="/blog" className="hover:text-white">Blogs</a>
+        <span>/</span>
+
           <a href="https://www.linkedin.com/in/utkarsh-shrivastava-7339041a0/" className="hover:text-white">LinkedIn</a>
           <span>/</span>
           <a href="https://twitter.com/utkarsh4517" className="hover:text-white">Twitter</a>
@@ -37,7 +40,7 @@ export function Hero() {
           animate={{ opacity: 1 }}
           className="text-sm mb-4"
         >
-          Hi, I'm Utkarsh 👋
+          Hi, I&apos;m Utkarsh 👋
         </motion.p>
 
         <motion.h1

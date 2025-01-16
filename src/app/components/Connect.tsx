@@ -36,7 +36,7 @@ export function Connect() {
           transition={{ duration: 0.5 }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl font-light mb-4">Let's Connect</h2>
+          <h2 className="text-3xl font-light mb-4">Let&apos;s Connect</h2>
           <p className="text-gray-400">Explore more about my work and thoughts</p>
         </motion.div>
 
