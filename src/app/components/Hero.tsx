@@ -23,7 +23,7 @@ export function Hero() {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.3 }}
           className="w-24 h-24 rounded-full overflow-hidden mx-auto mb-6"
         >
           <Image
@@ -38,7 +38,7 @@ export function Hero() {
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
+          transition={{ delay: 0.1, duration: 0.2 }}
           className="text-sm mb-4"
           whileHover={{ 
             scale: 1.05,
@@ -51,10 +51,18 @@ export function Hero() {
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.8, duration: 0.7 }}
+          transition={{ delay: 0.2, duration: 0.7 }}
           className="text-4xl sm:text-5xl font-light mb-20"
         >
-          Building{' '}
+          <motion.span
+            whileHover={{ 
+              scale: 1.05,
+              textShadow: "0 0 8px rgba(255,255,255,0.8)"
+            }}
+            transition={{ duration: 0.3 }}
+          >
+            Building
+          </motion.span>{' '}
           <motion.span 
             className="text-gray-500"
             whileHover={{ 
@@ -66,7 +74,15 @@ export function Hero() {
           >
             high quality
           </motion.span>{' '}
-          mobile and web{' '}
+          <motion.span
+            whileHover={{ 
+              scale: 1.05,
+              textShadow: "0 0 8px rgba(255,255,255,0.8)"
+            }}
+            transition={{ duration: 0.3 }}
+          >
+            mobile and web
+          </motion.span>{' '}
           <motion.span 
             className="text-gray-500"
             whileHover={{ 
