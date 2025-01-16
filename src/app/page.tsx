@@ -1,6 +1,7 @@
 import { Hero } from "./components/Hero";
 import { Services } from "./components/Services";
 import { Connect } from "./components/Connect";
+import { GetInTouch } from "./components/GetInTouch";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Services />
       <Connect />
+      <GetInTouch />
     </main>
   );
 }
