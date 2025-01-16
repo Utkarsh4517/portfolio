@@ -25,7 +25,7 @@ export default {
         },
       },
       fontFamily: {
-        junge: ['var(--font-junge)'],
+        junge: ['var(--font-poppins)'],
       },
     },
   },

@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import { Junge } from 'next/font/google';
+import { Junge, Poppins } from 'next/font/google';
 import "./globals.css";
 
-const junge = Junge({
+const poppins = Poppins({
   weight: '400',
   subsets: ['latin'],
-  variable: '--font-junge',
+  variable: '--font-poppins',
 });
 
 const geistSans = localFont({
@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${junge.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${poppins.variable} antialiased`}
       >
         {children}
       </body>
