@@ -14,7 +14,7 @@ const links = [
     title: "Resume",
     description: "View my projects, works and professional background",
     icon: <DocumentTextIcon className="w-6 h-6" />,
-    url: "https://drive.google.com/file/d/1VZh5lilKuXXzG4BfIIzEDvdLfnO5RDKx/view?usp=sharing",
+    url: "https://docs.google.com/document/d/1_vdcINLQO-u1zzZWq4N2R445MP3DqBszoxuc5O2CAy4/edit?usp=sharing",
     className: "bg-accent/10 text-accent hover:bg-accent/20"
   },
   {
