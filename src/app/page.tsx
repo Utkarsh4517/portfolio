@@ -1,15 +1,25 @@
-import { Hero } from "./components/Hero";
-import { Services } from "./components/Services";
-import { Connect } from "./components/Connect";
-import { GetInTouch } from "./components/GetInTouch";
+import { GradientBackground } from "./components/gradient-background"
+import { Instrument_Serif } from "next/font/google"
 
-export default function Home() {
+const instrumentSerif = Instrument_Serif({
+  subsets: ["latin"],
+  weight: ["400"],
+  display: "swap",
+})
+
+export default function Page() {
   return (
-    <main className="min-h-screen bg-[#0a0a0a] text-white">
-      <Hero />
-      <Services />
-      <Connect />
-      <GetInTouch />
+    <main className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <GradientBackground />
+      <div className="absolute inset-0 -z-10 bg-black/20" />
+
+      <section className="px-6">
+        <h1
+          className={`${instrumentSerif.className} text-white text-center text-balance font-normal tracking-tight text-7xl`}
+        >
+          code is limitless
+        </h1>
+      </section>
     </main>
-  );
+  )
 }
